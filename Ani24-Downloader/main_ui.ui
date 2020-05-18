@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1329</width>
+    <height>851</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1329</width>
+    <height>851</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1329</width>
+    <height>851</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="urlInfo">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>10</y>
+      <width>481</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>애니24: https://ani24do.com                야애니24: https://yaani24.net</string>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>40</y>
+      <width>1310</width>
+      <height>781</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>4564665</width>
+      <height>781</height>
+     </size>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="aniSearchTab">
+     <attribute name="title">
+      <string>애니 검색</string>
+     </attribute>
+     <widget class="QLineEdit" name="aniSearchBox">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>31</y>
+        <width>821</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="aniSearchBtn">
+      <property name="geometry">
+       <rect>
+        <x>1180</x>
+        <y>31</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>애니 검색</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="setSiteFrame">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>51</y>
+        <width>301</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+      <widget class="QRadioButton" name="setSiteYaAni24rBtn">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>20</y>
+         <width>91</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>야애니24</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">setSiteBtnGroup</string>
+       </attribute>
+      </widget>
+      <widget class="QRadioButton" name="setSiteAni24rBtn">
+       <property name="geometry">
+        <rect>
+         <x>19</x>
+         <y>20</y>
+         <width>91</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>애니24</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">setSiteBtnGroup</string>
+       </attribute>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="setWayFrame">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>156</y>
+        <width>301</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <widget class="QRadioButton" name="searchKeyWordRBtn">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>20</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>키워드</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">setSearchWayBtnGroup</string>
+       </attribute>
+      </widget>
+      <widget class="QRadioButton" name="completeRBtn">
+       <property name="geometry">
+        <rect>
+         <x>19</x>
+         <y>20</y>
+         <width>61</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>완결</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">setSearchWayBtnGroup</string>
+       </attribute>
+      </widget>
+      <widget class="QRadioButton" name="quarterTop20rBtn">
+       <property name="geometry">
+        <rect>
+         <x>19</x>
+         <y>100</y>
+         <width>121</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>분기 Top20</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">setSearchWayBtnGroup</string>
+       </attribute>
+      </widget>
+      <widget class="QRadioButton" name="newTop20rBtn">
+       <property name="geometry">
+        <rect>
+         <x>19</x>
+         <y>60</y>
+         <width>121</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>신작 Top20</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">setSearchWayBtnGroup</string>
+       </attribute>
+      </widget>
+      <widget class="QRadioButton" name="yearTop20rBtn">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>100</y>
+         <width>121</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>올해 Top20</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">setSearchWayBtnGroup</string>
+       </attribute>
+      </widget>
+      <widget class="QRadioButton" name="genreTop20rBtn">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>60</y>
+         <width>121</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>장르 Top20</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">setSearchWayBtnGroup</string>
+       </attribute>
+      </widget>
+      <widget class="QRadioButton" name="tasteRBtn">
+       <property name="geometry">
+        <rect>
+         <x>19</x>
+         <y>140</y>
+         <width>108</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>취향 맞춤</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">setSearchWayBtnGroup</string>
+       </attribute>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="setTagFrame">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>372</y>
+        <width>301</width>
+        <height>371</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <widget class="QComboBox" name="clothesComboBox">
+       <property name="geometry">
+        <rect>
+         <x>118</x>
+         <y>219</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="quarterLabel">
+       <property name="geometry">
+        <rect>
+         <x>17</x>
+         <y>140</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;분기&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="clothesLabel">
+       <property name="geometry">
+        <rect>
+         <x>17</x>
+         <y>219</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;옷&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="playWayLabel">
+       <property name="geometry">
+        <rect>
+         <x>17</x>
+         <y>179</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;플레이방식&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="playWayComboBox">
+       <property name="geometry">
+        <rect>
+         <x>118</x>
+         <y>179</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="hairColorLabel">
+       <property name="geometry">
+        <rect>
+         <x>17</x>
+         <y>299</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;머리색&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="producerComboBox">
+       <property name="geometry">
+        <rect>
+         <x>118</x>
+         <y>59</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="hairStyleLabel">
+       <property name="geometry">
+        <rect>
+         <x>17</x>
+         <y>259</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;머리스타일&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="hairStyleComboBox">
+       <property name="geometry">
+        <rect>
+         <x>118</x>
+         <y>259</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="quarterComboBox">
+       <property name="geometry">
+        <rect>
+         <x>118</x>
+         <y>139</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="hairColorComboBox">
+       <property name="geometry">
+        <rect>
+         <x>118</x>
+         <y>299</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="producerLabel">
+       <property name="geometry">
+        <rect>
+         <x>17</x>
+         <y>60</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;제작사&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="yearLabel">
+       <property name="geometry">
+        <rect>
+         <x>17</x>
+         <y>100</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;연도&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="gerneComboBox">
+       <property name="geometry">
+        <rect>
+         <x>118</x>
+         <y>19</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="yearComboBox">
+       <property name="geometry">
+        <rect>
+         <x>118</x>
+         <y>99</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="genreLabel">
+       <property name="geometry">
+        <rect>
+         <x>17</x>
+         <y>20</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;장르&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="typeLabel">
+       <property name="geometry">
+        <rect>
+         <x>17</x>
+         <y>339</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;타입&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="typeComboBox">
+       <property name="geometry">
+        <rect>
+         <x>118</x>
+         <y>339</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="aniSiteCheckLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>31</y>
+        <width>131</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>검색 사이트 선택</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="aniSearchWayLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>136</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>검색 방법 선택</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="aniSelectTagLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>354</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="text">
+       <string>검색 태그 선택</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="searchTable">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>83</y>
+        <width>951</width>
+        <height>661</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="aniDownloadTab">
+     <attribute name="title">
+      <string>애니 다운로드</string>
+     </attribute>
+     <widget class="QLineEdit" name="aniEpiLinkBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>1151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="aniEpiSearchBtn">
+      <property name="geometry">
+       <rect>
+        <x>1170</x>
+        <y>20</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>애니 횟차 검색</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="aniEpiList">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>421</width>
+        <height>641</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="aniEpiListLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>애니 횟차 리스트</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkAllBox">
+      <property name="geometry">
+       <rect>
+        <x>343</x>
+        <y>80</y>
+        <width>91</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>전체 선택</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="aniDownloadLog">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>100</y>
+        <width>721</width>
+        <height>601</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="downloadProgressBar">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>717</y>
+        <width>731</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="aniDownloadLogLabel">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>80</y>
+        <width>141</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>애니 다운로드 로그</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="aniDownloadBtn">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>390</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>애니 다운로드</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="settingsTab">
+     <attribute name="title">
+      <string>설정 및 도움말</string>
+     </attribute>
+     <widget class="QFrame" name="settingsFrame">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>431</width>
+        <height>681</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>0</y>
+         <width>221</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Ani24 Info File을 가져옵니다.
+처음이나 업데이트 하고 싶을때 
+불러오시면 됩니다.</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="loadNewInfo">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>40</y>
+         <width>141</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>새 정보 불러오기</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="helpFrame">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>60</y>
+        <width>371</width>
+        <height>681</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="help1Label">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>301</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="text">
+        <string>[검색 방법 설명]
+키워드는 옆 검색박스에 검색어를
+입력하면 됩니다.
+그리고 검색버튼은 검색박스 옆
+[애니 검색] 버튼으로 통일되어있습니다.</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="settingsLabel">
+      <property name="geometry">
+       <rect>
+        <x>14</x>
+        <y>30</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>설정</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="helpLabel">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>30</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>도움말</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="developFrame">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>58</y>
+        <width>391</width>
+        <height>681</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>40</y>
+         <width>161</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>제작자: 김경민kdr</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>90</y>
+         <width>281</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Github: https://github.com/kdrkdrkdr</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>140</y>
+         <width>331</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Blog: https://blog.naver.com/powerapollon</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>190</y>
+         <width>331</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>E-Mail: kdrhacker1234@gmail.com</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="developLabel">
+      <property name="geometry">
+       <rect>
+        <x>892</x>
+        <y>30</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>개발자 정보</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="setSiteBtnGroup"/>
+  <buttongroup name="setSearchWayBtnGroup"/>
+ </buttongroups>
+</ui>
